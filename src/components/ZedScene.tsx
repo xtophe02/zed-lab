@@ -71,8 +71,11 @@ const GlowMesh = () => {
 
 export default function ZedScene() {
   return (
-    <div className="fixed inset-0 z-0 bg-black">
-      <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
+    <div className="absolute inset-0 w-full h-full z-0 bg-black">
+      <Canvas 
+        camera={{ position: [0, 0, 5], fov: 75 }}
+        style={{ width: '100%', height: '100%' }}
+      >
         <ambientLight intensity={0.5} />
         <Float speed={1.5} rotationIntensity={1} floatIntensity={1}>
           <WireframeSphere />
