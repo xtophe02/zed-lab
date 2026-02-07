@@ -6,7 +6,7 @@ export default function TalkInterface() {
   const [isConnected, setIsConnected] = useState(false);
   const [volume, setVolume] = useState(0);
   const [isListening, setIsListening] = useState(false);
-  const animationRef = useRef<number | undefined>(undefined);
+  const animationRef = useRef<number>(0);
   const orbRef = useRef<HTMLDivElement>(null);
   const [time, setTime] = useState(0);
 
